@@ -1,0 +1,45 @@
+﻿@using EstatisticasMVC.Entitys;
+@{
+    ViewData["Title"] = "Novo Produto";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Novo Produto</h1>
+</div>
+
+<hr>
+<a href="/produtos/novo" class="btn btn-primary">Novo</a>
+<hr>
+
+<hr>
+
+<form action="/produtos/cadastrar" method="post">
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="nome" class="form-control" id="nome" name="nome" placeholder="Digite o nome">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="descricao">Descricao</label>
+        <input type="descricao" class="form-control" id="descricao" name="descricao" placeholder="Digite a descrição">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="dataCriacao">Data de Criação</label>
+        <input type="dataCriacao" class="form-control" id="dataCriacao" name="datacriacao" placeholder="Digite a data (yyyy/MM/dd)">
+    </div>
+    <br>
+        <div class="form-group">
+        <label for="dataValidade">Data de Validade</label>
+        <input type="dataCriacao" class="form-control" id="dataValidade" name="datavalidade" placeholder="Digite a data (yyyy/MM/dd)">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="quantidade">Quantidade</label>
+        <input type="quantidade" class="form-control" id="quantidade" name="quantidade" placeholder="Digite a quantidade">
+    </div>
+    <br>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+    <a href="/produtos" class="btn btn-default">Voltar</a>
+</form>
